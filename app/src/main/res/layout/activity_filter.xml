@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FIlterActivity">
+
+    <EditText
+        android:id="@+id/minAttack"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Minimum Attack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/psychic"
+        app:layout_constraintTop_toBottomOf="@id/minHealth" />
+
+    <TextView
+        android:id="@+id/types"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="clip_vertical|center_horizontal"
+        android:text="Type"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/water"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Water"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grass"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/grass"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Grass"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/types"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <CheckBox
+        android:id="@+id/fire"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Fire"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/water"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/electric"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Electric"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fire"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/ground"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Ground"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electric"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/ice"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Ice"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ground"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/flying"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Flying"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ice"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/rock"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Rock"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flying"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/steel"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Steel"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rock"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/normal"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Normal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steel"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/fighting"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Fighting"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/normal"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/ghost"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Ghost"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fighting"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/dark"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:text="Dark"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ghost"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/psychic"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Psychic"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/poison"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Poison"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/psychic"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/dragon"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Dragon"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poison"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/fairy"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Fairy"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dragon"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/bug"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Bug"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fairy"
+        android:onClick="onCheckboxClicked"/>
+
+    <EditText
+        android:id="@+id/minHealth"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Minimum Health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/psychic"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/minDefense"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Minimum Defense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/psychic"
+        app:layout_constraintTop_toBottomOf="@id/minAttack" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="127dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="59dp"
+        android:text="Return To List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ice"
+        app:layout_constraintTop_toBottomOf="@+id/minDefense" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
