@@ -45,7 +45,7 @@ public class RecyclerViewListAdapter extends RecyclerView.Adapter<RecyclerViewLi
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pokemon.PokemonItem currentPokemon = pokemonNames.get(position);
         String pokemonUrl = "https://img.pokemondb.net/artwork/" + currentPokemon.name.toLowerCase() + ".jpg";
-        Glide.with(mContext).load("https://img.pokemondb.net/artwork/turtwig.jpg").into(holder.pokemonIcon);
+        Glide.with(mContext).load("https://www.sccpre.cat/mypng/detail/444-4449454_pokeball-pokemon-ball-transparent-background.png").into(holder.pokemonIcon);
         if (Patterns.WEB_URL.matcher(pokemonUrl).matches()){
             Glide.with(mContext).load(pokemonUrl).into(holder.pokemonIcon);
         }

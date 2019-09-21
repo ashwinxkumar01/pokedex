@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -152,6 +153,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewListA
 
 
         Intent intent = new Intent(this, DetailedPokemon.class);
+        intent.putExtra("pokemonObject", (Parcelable) pokemonsChanging.get(position));
         startActivity(intent);
     }
 }
